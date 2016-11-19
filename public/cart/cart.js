@@ -7,6 +7,10 @@ angular.module('cart', ['ngRoute'])
 	});
 }])
 
-.controller('CartCtrl', ['$scope', function($scope){
-	
+.controller('CartCtrl', ['$scope', '$http', function($scope, $http){
+
+	$http.get("public/list.json").then(function(response){
+		$scope.cartData = response.data;
+	});
+
 }])

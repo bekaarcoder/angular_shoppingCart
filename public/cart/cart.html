@@ -1,105 +1,13 @@
 <div class="jumbotron text-center">
 		<h2>AngularJS Shopping Cart</h2>
 	</div>
-	<div class="container">
+	<div class="container" ng-controller="CartCtrl">
 		<div class="row">
 			<div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Panel Heading</div>
+				<div class="panel panel-primary" ng-repeat = "data in cartData">
+					<div class="panel-heading">{{data.item}}</div>
 					<div class="panel-body">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 1</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 2</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 3</label>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-primary">
-					<div class="panel-heading">Panel Heading</div>
-					<div class="panel-body">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 1</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 2</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 3</label>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-primary">
-					<div class="panel-heading">Panel Heading</div>
-					<div class="panel-body">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 1</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 2</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 3</label>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-primary">
-					<div class="panel-heading">Panel Heading</div>
-					<div class="panel-body">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 1</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 2</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 3</label>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-primary">
-					<div class="panel-heading">Panel Heading</div>
-					<div class="panel-body">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 1</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 2</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 3</label>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-primary">
-					<div class="panel-heading">Panel Heading</div>
-					<div class="panel-body">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 1</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 2</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 3</label>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-primary">
-					<div class="panel-heading">Panel Heading</div>
-					<div class="panel-body">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 1</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 2</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="optradio">Option 3</label>
-						</div>
+						
 					</div>
 				</div>
 			</div>
