@@ -6,16 +6,14 @@
 			<div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
 				<div class="panel panel-primary" ng-repeat = "data in cartData">
 					<div class="panel-heading">{{data.item}}</div>
-					<div class="panel-body">
-						
-					</div>
+					<check-list option="data.prices" name="data.id" selected="data.selected"></check-list>
 				</div>
 			</div>
 			<div class="col-xs-5 col-md-4 col-sm-4 col-lg-4" data-spy="affix" data-offset-top="20">
 				<div class="panel panel-success">
 					<div class="panel-heading">Total</div>
 					<div class="panel-body">
-						<h2>Rs. 1000</h2>
+						<h2>Rs. {{total()}}</h2>
 					</div>
 				</div>
 				<div class="text-center">
