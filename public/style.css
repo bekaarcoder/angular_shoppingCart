@@ -11,3 +11,8 @@
 	right: 0px;
 	position: fixed;
 }
+
+.fix-elem {
+	position: fixed;
+	top: 20px;
+}

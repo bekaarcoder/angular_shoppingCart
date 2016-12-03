@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" ng-controller="CheckoutCtrl">
 	<div class="page-header">
 		<h2>CheckOut Page</h2>
 	</div>
@@ -11,17 +11,13 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>CPU</td>
-					<td>Rs.15000</td>
-				</tr>
-				<tr>
-					<td>Hard Disk</td>
-					<td>Rs. 5000</td>
+				<tr ng-repeat="i in items" ng-if="i.selected != 0">
+					<td>{{i.item}}</td>
+					<td>Rs.{{i.selected}}</td>
 				</tr>
 				<tr>
 					<td>Total:</td>
-					<td>Rs. 20000</td>
+					<td>Rs. {{total}}</td>
 				</tr>
 			</tbody>
 		</table>
